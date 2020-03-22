@@ -27,6 +27,7 @@
 		0C505738453A7EF776BE1E95 /* Pods-Thinkz-IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thinkz-IOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Thinkz-IOS/Pods-Thinkz-IOS.debug.xcconfig"; sourceTree = "<group>"; };
 		1A94F7A5CB7121F5A0F15D63 /* Pods-Thinkz-IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thinkz-IOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Thinkz-IOS/Pods-Thinkz-IOS.release.xcconfig"; sourceTree = "<group>"; };
 		23221E8024270C40005AF441 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		23221E8324271424005AF441 /* Thinkz-IOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Thinkz-IOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		23534C0C2426ED0900634611 /* BasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
 		23534C0E2426ED8600634611 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		23534C102426EDFD00634611 /* TransitionTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionTypes.swift; sourceTree = "<group>"; };
@@ -62,6 +63,13 @@
 				23221E8024270C40005AF441 /* UIButtonExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		23221E82242710DA005AF441 /* Smartpen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Smartpen;
 			sourceTree = "<group>";
 		};
 		23534C0B2426ECF600634611 /* Common */ = {
@@ -104,11 +112,13 @@
 			isa = PBXGroup;
 			children = (
 				23D80CC92426EA1000A64732 /* Info.plist */,
+				23221E8324271424005AF441 /* Thinkz-IOS-Bridging-Header.h */,
 				23D80CD02426EAF800A64732 /* Assets */,
 				23D80CCF2426EADD00A64732 /* Main App Files */,
 				23D80CD22426EB0F00A64732 /* GUI */,
 				23534C0B2426ECF600634611 /* Common */,
 				23D80CD12426EB0500A64732 /* Models */,
+				23221E82242710DA005AF441 /* Smartpen */,
 			);
 			path = "Thinkz-IOS";
 			sourceTree = "<group>";
@@ -218,6 +228,7 @@
 				TargetAttributes = {
 					23D80CB72426EA0900A64732 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -442,6 +453,7 @@
 			baseConfigurationReference = 0C505738453A7EF776BE1E95 /* Pods-Thinkz-IOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7CS6N8JRT4;
 				INFOPLIST_FILE = "Thinkz-IOS/Info.plist";
@@ -451,6 +463,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Thinkz.Thinkz-IOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Thinkz-IOS/Thinkz-IOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +475,7 @@
 			baseConfigurationReference = 1A94F7A5CB7121F5A0F15D63 /* Pods-Thinkz-IOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7CS6N8JRT4;
 				INFOPLIST_FILE = "Thinkz-IOS/Info.plist";
@@ -470,6 +485,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Thinkz.Thinkz-IOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Thinkz-IOS/Thinkz-IOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
