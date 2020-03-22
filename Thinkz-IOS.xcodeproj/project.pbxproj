@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23221E8124270C40005AF441 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23221E8024270C40005AF441 /* UIButtonExtension.swift */; };
 		23534C0D2426ED0900634611 /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23534C0C2426ED0900634611 /* BasicViewController.swift */; };
 		23534C0F2426ED8600634611 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23534C0E2426ED8600634611 /* MainView.swift */; };
 		23534C112426EDFD00634611 /* TransitionTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23534C102426EDFD00634611 /* TransitionTypes.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		0C505738453A7EF776BE1E95 /* Pods-Thinkz-IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thinkz-IOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Thinkz-IOS/Pods-Thinkz-IOS.debug.xcconfig"; sourceTree = "<group>"; };
 		1A94F7A5CB7121F5A0F15D63 /* Pods-Thinkz-IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thinkz-IOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Thinkz-IOS/Pods-Thinkz-IOS.release.xcconfig"; sourceTree = "<group>"; };
+		23221E8024270C40005AF441 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		23534C0C2426ED0900634611 /* BasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
 		23534C0E2426ED8600634611 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		23534C102426EDFD00634611 /* TransitionTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionTypes.swift; sourceTree = "<group>"; };
@@ -54,9 +56,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23221E7F24270C27005AF441 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				23221E8024270C40005AF441 /* UIButtonExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		23534C0B2426ECF600634611 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				23221E7F24270C27005AF441 /* Extensions */,
 				23534C142426FA8600634611 /* GUI */,
 			);
 			path = Common;
@@ -285,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23D80CD52426EB4000A64732 /* MainViewController.swift in Sources */,
+				23221E8124270C40005AF441 /* UIButtonExtension.swift in Sources */,
 				23534C0F2426ED8600634611 /* MainView.swift in Sources */,
 				23D80CD82426EB7300A64732 /* Navigator.swift in Sources */,
 				23D80CDA2426EBBF00A64732 /* Scenes.swift in Sources */,

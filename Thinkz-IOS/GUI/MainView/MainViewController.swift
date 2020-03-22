@@ -9,14 +9,29 @@
 import UIKit
 
 class MainViewController: BasicViewController {
+    
+    let rootView = MainView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        initializeGestures()
     }
     
     override func loadView() {
-        view = MainView()
+        view = rootView
     }
 
+}
+
+//MARK: - Event Handlers
+extension MainViewController{
+    
+    func initializeGestures(){
+        rootView.testBtn.addTapGesture(target: self, action: #selector(testButtonTapped))
+    }
+    
+    @objc func testButtonTapped(){
+        
+    }
 }
