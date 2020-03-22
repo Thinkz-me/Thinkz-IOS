@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  Thinkz-IOS
 //
 //  Created by Mateusz Łukasiński on 22/03/2020.
@@ -8,13 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: BasicViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    override func loadView() {
+        view = MainView()
+    }
 
 }
-
